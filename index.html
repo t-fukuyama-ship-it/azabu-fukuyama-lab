@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Azabu Fukuyama Lab | 研究室</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Azabu Fukuyama Lab | 研究室</title>
+<style>
     :root {
       --ink: #17201b;
       --muted: #657069;
@@ -88,7 +89,7 @@
       color: var(--white);
       background:
         linear-gradient(90deg, rgba(9, 22, 17, 0.86), rgba(9, 22, 17, 0.42) 48%, rgba(9, 22, 17, 0.12)),
-        url("assets/microscope.jpg") center / cover;
+        linear-gradient(115deg,#0b1f19,#2f6f5e);
     }
 
     .hero::after {
@@ -452,7 +453,7 @@
       color: var(--white);
       background:
         linear-gradient(90deg, rgba(12, 31, 25, 0.88), rgba(12, 31, 25, 0.58)),
-        url("assets/facs.jpg") center / cover;
+        linear-gradient(115deg,#10241d,#316c5b);
     }
 
     .final-cta .section-title {
@@ -552,220 +553,203 @@
         margin-top: 6px;
       }
     }
-  </style>
+  
+/* 2027 refresh */
+.site-header{background:linear-gradient(180deg,rgba(7,23,18,.88),rgba(7,23,18,.25));position:absolute}.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:35px}.detail-card{background:white;border:1px solid var(--line);padding:28px;border-radius:10px}.detail-card h3{margin:0 0 12px;font-size:20px}.detail-card p{margin:0;color:var(--muted)}.mini-label{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.08em}.equipment-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.equipment.feature{grid-column:span 2}.equipment img{object-fit:cover}.equipment-text h3{font-size:20px}.note{font-size:13px;color:var(--muted);margin-top:18px}.career-categories{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:32px}.career-categories article{background:#fff;border:1px solid var(--line);padding:24px;border-radius:8px}.career-categories h3{margin:0 0 12px}.career-categories p{margin:0;color:var(--muted)}.flow-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}.flow-steps article{padding:22px;background:#fff;border-left:4px solid var(--accent)}.flow-steps strong{display:block;color:var(--accent)}@media(max-width:760px){.detail-grid,.career-categories,.flow-steps,.equipment-grid{grid-template-columns:1fr}.equipment.feature{grid-column:span 1}}
+
+.hero{background:linear-gradient(90deg,rgba(9,22,17,.88),rgba(9,22,17,.48)),url("assets/confocal.jpg") center / cover}
+</style>
 </head>
 <body>
-  <header class="site-header" aria-label="サイトヘッダー">
-    <div class="brand">Azabu Fukuyama Lab</div>
-    <nav class="nav" aria-label="ページ内ナビゲーション">
-      <a href="#policy">方針</a>
-      <a href="#members">メンバー</a>
-      <a href="#equipment">設備</a>
-      <a href="#contact">問い合わせ</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Laboratory / Graduate Research</p>
-      <h1>研究室</h1>
-      <p class="hero-copy">動物と人の健康を、基礎研究から社会実装へ。獣医学・生命科学を基盤に、微生物、毒性、皮膚疾患、環境と健康に関わる研究に取り組んでいます。</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#contact">大学院生募集を見る</a>
-        <a class="button" href="#equipment">研究設備を見る</a>
-      </div>
-    </div>
-  </section>
-
-  <main>
-    <section class="section tight" id="contact">
-      <div class="layout split">
-        <div>
-          <h2 class="section-title">主体的に研究へ取り組みたい大学院生を募集しています。</h2>
-          <p class="lead">研究テーマに関心があり、継続して考え、手を動かし、成果を形にしていきたい方は、メールまたはお問い合わせフォームよりご連絡ください。</p>
-        </div>
-        <aside class="contact-panel" aria-label="問い合わせ先">
-          <p>お問い合わせ先</p>
-          <span class="mail">t-fukuyama(at)azabu-u.ac.jp</span>
-          <p>※(at)を@に変えてください。</p>
-          <a class="text-link" href="https://forms.gle/Z1JTKuwUq28jVpJTA" target="_blank" rel="noopener">お問い合わせフォーム</a>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section" id="policy">
-      <div class="layout">
-        <h2 class="section-title">研究室の方針</h2>
-        <p class="lead">研究では、正解を待つよりも、問いを立て、試し、振り返る姿勢を重視しています。</p>
-        <div class="principles">
-          <article class="principle">
-            <span class="number">01</span>
-            <h3>主体的に研究する</h3>
-            <p>自分の将来像を考えながら、研究に継続して時間と力を注げる人を歓迎します。</p>
-          </article>
-          <article class="principle">
-            <span class="number">02</span>
-            <h3>失敗から学ぶ</h3>
-            <p>うまくいかないことも重要な発見につながります。考え続け、手を動かし続ける姿勢を大切にしています。</p>
-          </article>
-          <article class="principle">
-            <span class="number">03</span>
-            <h3>挑戦する人を伸ばす</h3>
-            <p>意欲をもって挑戦する人には、研究指導、実験環境、発表機会などを積極的に提供します。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section stats-band" id="members">
-      <div class="layout">
-        <h2 class="section-title">メンバーと実績</h2>
-        <div class="stats-grid">
-          <article class="stat">
-            <strong>26</strong>
-            <h3>在籍メンバー</h3>
-            <p>大学院生、学部生、研究技術員を含む研究室全体の人数。</p>
-          </article>
-          <article class="stat">
-            <strong>9</strong>
-            <h3>大学院生</h3>
-            <p>博士課程5名、修士課程4名が在籍。</p>
-          </article>
-          <article class="stat">
-            <strong>16</strong>
-            <h3>女性メンバー</h3>
-            <p>女性16名、男性10名の構成。</p>
-          </article>
-          <article class="stat">
-            <strong>24</strong>
-            <h3>主な受賞件数</h3>
-            <p>ページ掲載の学生受賞歴の合計。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="layout">
-        <h2 class="section-title">室生の受賞歴</h2>
-        <div class="awards">
-          <div class="award"><span>麻布大学 増井光子賞</span><span>計5名</span></div>
-          <div class="award"><span>麻布大学 小泉賞</span><span>計3名</span></div>
-          <div class="award"><span>麻布大学 卒業論文優秀賞</span><span>計12名</span></div>
-          <div class="award"><span>日本マイコトキシン学会 学生優秀発表賞</span><span>計3名</span></div>
-          <div class="award"><span>日本畜産学会 学生優秀発表賞</span><span>計1名</span></div>
-          <div class="award"><span>日本薬理学会 若手優秀発表賞</span><span>計1名</span></div>
-        </div>
-        <p class="career">卒業生は、製薬、食品、化学、農薬、空調、研究支援、動物病院、大学院進学など、幅広い分野へ進んでいます。主な進路：田辺三菱製薬、大塚製薬、キッセイ薬品、興和、日本農薬、ロート製薬、ヤクルト、タカノフーズ、ボゾリサーチ、クニミネ工業、株式会社VDT、大鵬薬品、ダイキン工業、麻布大学大学院、東京大学大学院、大阪大学大学院、北海道大学大学院、動物病院 等</p>
-      </div>
-    </section>
-
-    <section class="section equipment-band" id="equipment">
-      <div class="layout">
-        <div class="equipment-head">
-          <h2 class="section-title">研究室設備</h2>
-          <p class="lead">分子生物学、細胞解析、微生物実験、生体評価、皮膚評価など、研究内容に応じた実験環境を整えています。</p>
-        </div>
-
-        <div class="equipment-grid">
-          <article class="equipment feature">
-            <img src="assets/qPCR.jpg" alt="CFX DuetリアルタイムPCRシステム">
-            <div class="equipment-text">
-              <h3>分子生物・遺伝子解析</h3>
-              <p>qPCR、PCR、NanoDrop、核酸抽出など。</p>
-            </div>
-          </article>
-          <article class="equipment">
-            <img src="assets/facs.jpg" alt="セルソーター">
-            <div class="equipment-text">
-              <h3>細胞解析</h3>
-              <p>セルソーター、細胞数測定、顕微鏡観察。</p>
-            </div>
-          </article>
-          <article class="equipment">
-            <img src="assets/anaerobic-chamber.jpg" alt="嫌気チャンバー">
-            <div class="equipment-text">
-              <h3>微生物実験</h3>
-              <p>嫌気チャンバー、安全キャビネットなど。</p>
-            </div>
-          </article>
-          <article class="equipment">
-            <img src="assets/teer.jpg" alt="TEER測定装置">
-            <div class="equipment-text">
-              <h3>機能評価</h3>
-              <p>TEER、水分蒸散量、口臭測定など。</p>
-            </div>
-          </article>
-          <article class="equipment">
-            <img src="assets/bioprinter.jpg" alt="BIO X 3Dバイオプリンター">
-            <div class="equipment-text">
-              <h3>先端実験</h3>
-              <p>3Dバイオプリンター、組織関連実験。</p>
-            </div>
-          </article>
-          <article class="equipment feature">
-            <img src="assets/plate-reader.jpg" alt="プレートリーダー">
-            <div class="equipment-text">
-              <h3>発光・蛍光・吸光度測定</h3>
-              <p>GloMax、Multiskan、プレートウォッシャー、iBright。</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="equipment-list">
-          <div>
-            <strong>分子生物</strong>
-            <ul>
-              <li>Bioruptor</li>
-              <li>ビーズ破砕機</li>
-              <li>NanoDrop One</li>
-              <li>PCR / qPCR</li>
-            </ul>
-          </div>
-          <div>
-            <strong>細胞・組織</strong>
-            <ul>
-              <li>クリオスタット</li>
-              <li>サイトスピン</li>
-              <li>セルカウンター</li>
-              <li>蛍光・カラー倒立顕微鏡</li>
-            </ul>
-          </div>
-          <div>
-            <strong>測定・解析</strong>
-            <ul>
-              <li>GloMax</li>
-              <li>Multiskan SkyHigh</li>
-              <li>iBright CL1500</li>
-              <li>OralChroma</li>
-            </ul>
-          </div>
-          <div>
-            <strong>生体・皮膚評価</strong>
-            <ul>
-              <li>TEER測定装置</li>
-              <li>VAPO SCAN</li>
-              <li>MouseOx PLUS</li>
-              <li>冷却遠心機</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section final-cta">
-      <div class="layout">
-        <h2 class="section-title">研究テーマに向き合う時間を、ここから。</h2>
-        <p class="lead">研究室見学、大学院進学、共同研究に関するお問い合わせは、メールまたはフォームよりご連絡ください。</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#contact">問い合わせ先へ</a>
-          <a class="button" href="#equipment">設備を見る</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
+<header aria-label="サイトヘッダー" class="site-header">
+<div class="brand">Azabu Fukuyama Lab</div>
+<nav aria-label="ページ内ナビゲーション" class="nav"><a href="#research">研究</a><a href="#members">メンバー</a><a href="#career">進路</a><a href="#equipment">設備</a><a href="#admissions">配属案内</a><a href="#contact">問い合わせ</a></nav>
+</header>
+<section class="hero">
+<div class="hero-inner">
+<p class="eyebrow">Laboratory / Graduate Research</p>
+<h1>研究室</h1>
+<p class="hero-copy">人と伴侶動物の健康を、薬理学と臨床研究から支える。アレルギー・皮膚疾患、歯周病、環境因子、プロバイオティクスを横断し、病態解明から予防・治療法の開発へ。</p>
+<div class="hero-actions">
+<a class="button primary" href="#contact">大学院生募集を見る</a>
+<a class="button" href="#equipment">研究設備を見る</a>
+</div>
+</div>
+</section>
+<main>
+<section class="section tight" id="contact">
+<div class="layout split">
+<div>
+<h2 class="section-title">主体的に研究へ取り組みたい大学院生を募集しています。</h2>
+<p class="lead">研究テーマに関心があり、継続して考え、手を動かし、成果を形にしていきたい方は、メールまたはお問い合わせフォームよりご連絡ください。</p>
+</div>
+<aside aria-label="問い合わせ先" class="contact-panel">
+<p>お問い合わせ先</p>
+<span class="mail">t-fukuyama(at)azabu-u.ac.jp</span>
+<p>※(at)を@に変えてください。</p>
+<a class="text-link" href="https://forms.gle/Z1JTKuwUq28jVpJTA" rel="noopener" target="_blank">お問い合わせフォーム</a>
+</aside>
+</div>
+</section>
+<section class="section" id="research"><div class="layout"><p class="mini-label">RESEARCH / VETERINARY PHARMACOLOGY</p><h2 class="section-title">研究テーマ</h2><p class="lead">細胞・細菌・実験動物を用いた基礎研究に加え、動物病院と連携した疫学・臨床研究、企業・外部研究機関との共同研究を通じて、伴侶動物とその家族のQOL向上を目指します。</p><div class="detail-grid"><article class="detail-card"><span class="mini-label">01 / ALLERGY &amp; DERMATOLOGY</span><h3>アレルギー・皮膚疾患</h3><p>アトピー性皮膚炎、喘息、膿皮症、かゆみの病態を解析し、薬剤・天然物・プラズマ・マイクロバブル水などの新しい治療法を検討します。</p></article><article class="detail-card"><span class="mini-label">02 / ORAL HEALTH</span><h3>犬・猫の歯周病</h3><p>Porphyromonas gulae の病原性や遺伝子型を研究し、歯肉炎・口臭・プラークの改善を目指した天然物等を評価します。</p></article><article class="detail-card"><span class="mini-label">03 / TOXICOLOGY</span><h3>毒性・環境要因</h3><p>かび毒、VOC、化学物質、老化などがアレルギーや皮膚感作性に与える影響を免疫毒性の観点から研究します。</p></article><article class="detail-card"><span class="mini-label">04 / PROBIOTICS</span><h3>犬・猫由来乳酸菌</h3><p>犬・猫由来乳酸菌の免疫調整作用や喘息・歯周病への効果を検討。大学発ベンチャーVMATによる社会実装にもつなげています。</p></article></div></div></section><section class="section" id="policy">
+<div class="layout">
+<h2 class="section-title">研究室の方針</h2>
+<p class="lead">研究では、正解を待つよりも、問いを立て、試し、振り返る姿勢を重視しています。</p>
+<div class="principles">
+<article class="principle">
+<span class="number">01</span>
+<h3>主体的に研究する</h3>
+<p>自分の将来像を考えながら、研究に継続して時間と力を注げる人を歓迎します。</p>
+</article>
+<article class="principle">
+<span class="number">02</span>
+<h3>失敗から学ぶ</h3>
+<p>うまくいかないことも重要な発見につながります。考え続け、手を動かし続ける姿勢を大切にしています。</p>
+</article>
+<article class="principle">
+<span class="number">03</span>
+<h3>挑戦する人を伸ばす</h3>
+<p>意欲をもって挑戦する人には、研究指導、実験環境、発表機会などを積極的に提供します。</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section stats-band" id="members">
+<div class="layout">
+<h2 class="section-title">メンバーと実績</h2>
+<div class="stats-grid">
+<article class="stat">
+<strong>27</strong>
+<h3>在籍メンバー</h3>
+<p>女性16名・男性11名。教員2名を含む研究室全体。</p>
+</article>
+<article class="stat">
+<strong>12</strong>
+<h3>大学院生</h3>
+<p>博士課程5名・修士課程7名。</p>
+</article>
+<article class="stat">
+<strong>33</strong>
+<h3>2026年 学会発表</h3>
+<p>国内外の学会で計33演題を発表。</p>
+</article>
+<article class="stat">
+<strong>15</strong>
+<h3>2026年 論文業績</h3>
+<p>2026年の掲載論文・研究業績は計15報。</p>
+</article>
+</div><div class="detail-grid" style="margin-top:32px"><article class="detail-card"><h3>教員・研究スタッフ</h3><p>福山 朋季 ／ 金木 真央<br/>研究技術員 1名</p></article><article class="detail-card"><h3>学生の内訳</h3><p>博士課程 5名（うち動物応用専攻1名）／修士課程 7名（動物応用専攻）<br/>獣医学科：6年次1名・5年次4名・4年次4名・3年次1名<br/>動物応用科学科：4年次2名</p></article></div>
+</div>
+</section>
+<section class="section">
+<div class="layout">
+<h2 class="section-title">室生の受賞歴</h2>
+<div class="awards"><div class="award"><span>麻布大学 増井光子賞（2022〜2025年）</span><span>計6名</span></div><div class="award"><span>麻布大学 古泉賞（2022・2025年）</span><span>計3名</span></div><div class="award"><span>麻布大学 卒業論文優秀賞</span><span>計12名</span></div><div class="award"><span>日本マイコトキシン学会 優秀発表賞</span><span>学外受賞</span></div><div class="award"><span>日本畜産学会 若手優秀発表賞</span><span>学外受賞</span></div><div class="award"><span>日本薬理学会 優秀発表賞</span><span>学外受賞</span></div><div class="award"><span>日本獣医再生医療学会 学会賞</span><span>学外受賞</span></div></div>
+<section class="career" id="career"><h2 class="section-title">卒業生の進路</h2><p class="lead">2019年度以降の内定獲得企業・大学院進学先（2027年度募集要項より）。</p><div class="career-categories"><article><h3>企業・研究機関</h3><p>田辺三菱製薬（現・田辺ファーマ）、大塚製薬、大鵬薬品工業、キッセイ薬品工業、興和、ロート製薬、積水メディカル、ボゾリサーチセンター、日本農薬、クニミネ工業、ヤクルト、タカノフーズ、中部飼料、VDT 等</p></article><article><h3>大学院進学</h3><p>麻布大学大学院、東京大学大学院、大阪大学大学院、北海道大学大学院</p></article></div></section>
+</div>
+</section>
+<section class="section equipment-band" id="equipment">
+<div class="layout">
+<div class="equipment-head">
+<h2 class="section-title">研究室設備</h2>
+<p class="lead">分子生物学、細胞解析、微生物実験、生体評価、皮膚評価など、研究内容に応じた実験環境を整えています。</p>
+</div>
+<div class="equipment-grid">
+<article class="equipment feature">
+<img alt="CFX DuetリアルタイムPCRシステム" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#254d43,#101f1a)'" src="assets/qPCR.jpg"/>
+<div class="equipment-text">
+<h3>分子生物・遺伝子解析</h3>
+<p>qPCR、PCR、NanoDrop、核酸抽出など。</p>
+</div>
+</article>
+<article class="equipment">
+<img alt="セルソーター" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#254d43,#101f1a)'" src="assets/facs.jpg"/>
+<div class="equipment-text">
+<h3>細胞解析</h3>
+<p>セルソーター、細胞数測定、顕微鏡観察。</p>
+</div>
+</article>
+<article class="equipment">
+<img alt="嫌気チャンバー" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#254d43,#101f1a)'" src="assets/anaerobic-chamber.jpg"/>
+<div class="equipment-text">
+<h3>微生物実験</h3>
+<p>嫌気チャンバー、安全キャビネットなど。</p>
+</div>
+</article>
+<article class="equipment">
+<img alt="TEER測定装置" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#254d43,#101f1a)'" src="assets/teer.jpg"/>
+<div class="equipment-text">
+<h3>機能評価</h3>
+<p>TEER、水分蒸散量、口臭測定など。</p>
+</div>
+</article>
+<article class="equipment">
+<img alt="BIO X 3Dバイオプリンター" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#254d43,#101f1a)'" src="assets/bioprinter.jpg"/>
+<div class="equipment-text">
+<h3>先端実験</h3>
+<p>3Dバイオプリンター、組織関連実験。</p>
+</div>
+</article>
+<article class="equipment feature">
+<img alt="プレートリーダー" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#254d43,#101f1a)'" src="assets/plate-reader.jpg"/>
+<div class="equipment-text">
+<h3>発光・蛍光・吸光度測定</h3>
+<p>GloMax、Multiskan、プレートウォッシャー、iBright。</p>
+</div>
+</article>
+<article class="equipment"><img alt="3Dプリンター" loading="lazy" src="assets/3d-printer.jpg"/><div class="equipment-text"><h3>3Dプリンター</h3><p>3D造形・試作</p></div></article><article class="equipment"><img alt="3Dバイオプリンター" loading="lazy" src="assets/3d-bioprinter.jpg"/><div class="equipment-text"><h3>3Dバイオプリンター</h3><p>BIO X／細胞・組織モデル作製</p></div></article><article class="equipment"><img alt="細胞集簇装置（サイトスピン）" loading="lazy" src="assets/cytospin.jpg"/><div class="equipment-text"><h3>細胞集簇装置（サイトスピン）</h3><p>細胞標本の作製</p></div></article><article class="equipment"><img alt="核酸自動抽出装置" loading="lazy" src="assets/kingfisher.jpg"/><div class="equipment-text"><h3>核酸自動抽出装置</h3><p>KingFisher Duo Prime</p></div></article><article class="equipment"><img alt="共焦点レーザー顕微鏡" loading="lazy" src="assets/confocal.jpg"/><div class="equipment-text"><h3>共焦点レーザー顕微鏡</h3><p>KEYENCE／高解像度イメージング</p></div></article></div>
+<div class="equipment-list">
+<div>
+<strong>分子生物</strong>
+<ul>
+<li>Bioruptor</li>
+<li>ビーズ破砕機</li>
+<li>NanoDrop One</li>
+<li>PCR / qPCR</li>
+</ul>
+</div>
+<div>
+<strong>細胞・組織</strong>
+<ul>
+<li>クリオスタット</li>
+<li>サイトスピン</li>
+<li>セルカウンター</li>
+<li>蛍光・カラー倒立顕微鏡</li>
+</ul>
+</div>
+<div>
+<strong>測定・解析</strong>
+<ul>
+<li>GloMax</li>
+<li>Multiskan SkyHigh</li>
+<li>iBright CL1500</li>
+<li>OralChroma</li>
+</ul>
+</div>
+<div>
+<strong>生体・皮膚評価</strong>
+<ul>
+<li>TEER測定装置</li>
+<li>VAPO SCAN</li>
+<li>MouseOx PLUS</li>
+<li>冷却遠心機</li>
+</ul>
+</div>
+<div><strong>先端・画像解析</strong><ul><li>共焦点レーザー顕微鏡</li><li>3Dバイオプリンター</li><li>3Dプリンター</li><li>核酸自動抽出装置</li><li>サイトスピン</li></ul></div></div>
+</div>
+</section>
+<section class="section" id="admissions"><div class="layout"><p class="mini-label">2027 / LABORATORY ASSIGNMENT</p><h2 class="section-title">2027年度 研究室配属案内</h2><p class="lead">受入れ人数は3名以内。研究室説明会への参加と、福山との面談・研究室見学が必須です。選考は成績証明書・志望理由書（形式自由）・面接を総合して判断します。</p><div class="detail-grid"><article class="detail-card"><h3>研究室説明会</h3><p>2026年11月16日（月）15:00〜／1号館 603・604ゼミ室<br/>2026年12月14日（月）14:00〜／1号館6階 実習室8<br/>参加できない場合はメールでご相談ください。</p></article><article class="detail-card"><h3>応募から配属まで</h3><p>説明会参加 → メールで面談・見学予約 → 面談・研究室見学 → 成績証明書・志望理由書提出 → 書類・面接による選考</p></article></div><h3 style="margin-top:46px">入室後の研究ステップ</h3><div class="flow-steps"><article><strong>STEP 01 / 3月〜GW前</strong>初期研修：実験手法、データ解析、細胞・細菌・実験動物の取り扱いを学びます。</article><article><strong>STEP 02 / GW後〜9月</strong>お試し研究：習得した技術を実際に使い、授業と研究の両立を身につけます。</article><article><strong>STEP 03 / 3年後期〜</strong>本研究：研究テーマを決定し、学外学会発表（必須）と論文発表を目指します。</article></div><p class="note">募集日時・人数等は2027年度募集要項に基づきます。応募前に最新の案内をご確認ください。</p></div></section><section class="section final-cta">
+<div class="layout">
+<h2 class="section-title">研究テーマに向き合う時間を、ここから。</h2>
+<p class="lead">研究室見学、大学院進学、共同研究に関するお問い合わせは、メールまたはフォームよりご連絡ください。</p>
+<div class="hero-actions">
+<a class="button primary" href="#contact">問い合わせ先へ</a>
+<a class="button" href="#equipment">設備を見る</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
     © Fukuyama Laboratory, Azabu University, All Rights Reserved.
   </footer>
 </body>

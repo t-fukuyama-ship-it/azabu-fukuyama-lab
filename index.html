@@ -559,11 +559,22 @@
 
 .hero{background:linear-gradient(90deg,rgba(9,22,17,.88),rgba(9,22,17,.48)),url("assets/confocal.jpg") center / cover}
 </style>
-</head>
+<style>
+/* Faculty emphasis and responsive layouts */
+#members .detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#members .faculty-panel{background:#f5faf6;border:1px solid rgba(156,210,189,.5);padding:36px 34px;min-height:230px}
+#members .faculty-panel h3{font-size:clamp(30px,3.5vw,43px);font-weight:800;letter-spacing:.03em;margin:12px 0}
+#members .faculty-panel .faculty-role{color:#50665c;font-size:15px;margin:0 0 24px}
+#members .faculty-panel .faculty-link{display:inline-flex;align-items:center;padding:10px 16px;background:#2f6f5e;color:#fff;text-decoration:none;border-radius:100px;font-size:14px;font-weight:700;min-height:44px}
+#members .student-panel{grid-column:1/-1}
+@media(max-width:760px){#members .detail-grid{grid-template-columns:1fr}#members .student-panel{grid-column:auto}}
+</style><style>
+.equipment-categories{display:grid;gap:48px;margin-top:30px}.equipment-category>h3{font-size:clamp(20px,2.5vw,27px);color:var(--ink);margin:0 0 20px;padding-bottom:12px;border-bottom:1px solid var(--line)}.equipment-category .equipment-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.equipment-category .equipment{min-height:260px;grid-column:auto}.equipment-category .equipment img{width:100%;height:100%;object-fit:cover}.equipment-category .equipment-text h3{font-size:18px}@media(max-width:760px){.equipment-category .equipment-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.equipment-category .equipment-grid{grid-template-columns:1fr}}
+</style></head>
 <body>
 <header aria-label="サイトヘッダー" class="site-header">
 <div class="brand">Azabu Fukuyama Lab</div>
-<nav aria-label="ページ内ナビゲーション" class="nav"><a href="#research">研究</a><a href="#members">メンバー</a><a href="#career">進路</a><a href="#equipment">設備</a><a href="#admissions">配属案内</a><a href="#contact">問い合わせ</a></nav>
+<nav aria-label="ページ内ナビゲーション" class="nav"><a href="#research">研究</a><a href="#members">メンバー</a><a href="#career">進路</a><a href="#equipment">設備</a><a href="#contact">問い合わせ</a></nav>
 </header>
 <section class="hero">
 <div class="hero-inner">
@@ -621,7 +632,7 @@
 <article class="stat">
 <strong>27</strong>
 <h3>在籍メンバー</h3>
-<p>女性16名・男性11名。教員2名を含む研究室全体。</p>
+<p>女性16名・男性11名。2027年度募集要項記載の人数。</p>
 </article>
 <article class="stat">
 <strong>12</strong>
@@ -638,14 +649,14 @@
 <h3>2026年 論文業績</h3>
 <p>2026年の掲載論文・研究業績は計15報。</p>
 </article>
-</div><div class="detail-grid" style="margin-top:32px"><article class="detail-card"><h3>教員・研究スタッフ</h3><p>福山 朋季 ／ 金木 真央<br/>研究技術員 1名</p></article><article class="detail-card"><h3>学生の内訳</h3><p>博士課程 5名（うち動物応用専攻1名）／修士課程 7名（動物応用専攻）<br/>獣医学科：6年次1名・5年次4名・4年次4名・3年次1名<br/>動物応用科学科：4年次2名</p></article></div>
+</div><div class="detail-grid" style="margin-top:32px"><article class="detail-card faculty-panel"><p class="mini-label">FACULTY / PRINCIPAL INVESTIGATOR</p><h3>福山 朋季</h3><p class="faculty-role">指導教員・獣医薬理学</p><a class="faculty-link" href="https://researchmap.jp/t-fukuyama" rel="noopener noreferrer" target="_blank">researchmap で研究業績を見る ↗</a></article><article class="detail-card faculty-panel"><p class="mini-label">FACULTY / RESEARCHER</p><h3>金木 真央</h3><p class="faculty-role">教員・獣医薬理学</p><a class="faculty-link" href="https://researchmap.jp/m-kaneki" rel="noopener noreferrer" target="_blank">researchmap で研究業績を見る ↗</a></article><article class="detail-card student-panel"><h3>学生・研究スタッフ</h3><p>博士課程 5名（うち動物応用専攻1名）／修士課程 7名（動物応用専攻）<br/>獣医学科：6年次1名・5年次4名・4年次4名・3年次1名<br/>動物応用科学科：4年次2名<br/>研究技術員 1名</p></article></div>
 </div>
 </section>
 <section class="section">
 <div class="layout">
 <h2 class="section-title">室生の受賞歴</h2>
-<div class="awards"><div class="award"><span>麻布大学 増井光子賞（2022〜2025年）</span><span>計6名</span></div><div class="award"><span>麻布大学 古泉賞（2022・2025年）</span><span>計3名</span></div><div class="award"><span>麻布大学 卒業論文優秀賞</span><span>計12名</span></div><div class="award"><span>日本マイコトキシン学会 優秀発表賞</span><span>学外受賞</span></div><div class="award"><span>日本畜産学会 若手優秀発表賞</span><span>学外受賞</span></div><div class="award"><span>日本薬理学会 優秀発表賞</span><span>学外受賞</span></div><div class="award"><span>日本獣医再生医療学会 学会賞</span><span>学外受賞</span></div></div>
-<section class="career" id="career"><h2 class="section-title">卒業生の進路</h2><p class="lead">2019年度以降の内定獲得企業・大学院進学先（2027年度募集要項より）。</p><div class="career-categories"><article><h3>企業・研究機関</h3><p>田辺三菱製薬（現・田辺ファーマ）、大塚製薬、大鵬薬品工業、キッセイ薬品工業、興和、ロート製薬、積水メディカル、ボゾリサーチセンター、日本農薬、クニミネ工業、ヤクルト、タカノフーズ、中部飼料、VDT 等</p></article><article><h3>大学院進学</h3><p>麻布大学大学院、東京大学大学院、大阪大学大学院、北海道大学大学院</p></article></div></section>
+<div class="awards"><div class="award"><span>麻布大学 増井光子賞（2022〜2025年）</span><span>計6名</span></div><div class="award"><span>麻布大学 古泉賞（2022・2025年）</span><span>計3名</span></div><div class="award"><span>麻布大学 卒業論文優秀賞（2019〜2025年）</span><span>計12名</span></div><div class="award"><span>日本マイコトキシン学会 優秀発表賞</span><span>2020・2023・2026年（計3回）</span></div><div class="award"><span>日本畜産学会 若手優秀発表賞</span><span>2023年</span></div><div class="award"><span>日本薬理学会 優秀発表賞</span><span>2025年</span></div><div class="award"><span>日本獣医再生医療学会 学会賞</span><span>2026年</span></div></div>
+<section class="career" id="career"><h2 class="section-title">卒業生の進路</h2><p class="lead">2019年度以降の内定獲得企業・大学院進学先。</p><div class="career-categories"><article><h3>企業・研究機関</h3><p>田辺三菱製薬（現・田辺ファーマ）、大塚製薬、大鵬薬品工業、キッセイ薬品工業、興和、ロート製薬、積水メディカル、ボゾリサーチセンター、日本農薬、クニミネ工業、ヤクルト、タカノフーズ、中部飼料、VDT 等</p></article><article><h3>大学院進学</h3><p>麻布大学大学院、東京大学大学院、大阪大学大学院、北海道大学大学院</p></article></div></section>
 </div>
 </section>
 <section class="section equipment-band" id="equipment">
@@ -654,91 +665,11 @@
 <h2 class="section-title">研究室設備</h2>
 <p class="lead">分子生物学、細胞解析、微生物実験、生体評価、皮膚評価など、研究内容に応じた実験環境を整えています。</p>
 </div>
-<div class="equipment-grid">
-<article class="equipment feature">
-<img alt="CFX DuetリアルタイムPCRシステム" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#254d43,#101f1a)'" src="assets/qPCR.jpg"/>
-<div class="equipment-text">
-<h3>分子生物・遺伝子解析</h3>
-<p>qPCR、PCR、NanoDrop、核酸抽出など。</p>
-</div>
-</article>
-<article class="equipment">
-<img alt="セルソーター" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#254d43,#101f1a)'" src="assets/facs.jpg"/>
-<div class="equipment-text">
-<h3>細胞解析</h3>
-<p>セルソーター、細胞数測定、顕微鏡観察。</p>
-</div>
-</article>
-<article class="equipment">
-<img alt="嫌気チャンバー" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#254d43,#101f1a)'" src="assets/anaerobic-chamber.jpg"/>
-<div class="equipment-text">
-<h3>微生物実験</h3>
-<p>嫌気チャンバー、安全キャビネットなど。</p>
-</div>
-</article>
-<article class="equipment">
-<img alt="TEER測定装置" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#254d43,#101f1a)'" src="assets/teer.jpg"/>
-<div class="equipment-text">
-<h3>機能評価</h3>
-<p>TEER、水分蒸散量、口臭測定など。</p>
-</div>
-</article>
-<article class="equipment">
-<img alt="BIO X 3Dバイオプリンター" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#254d43,#101f1a)'" src="assets/bioprinter.jpg"/>
-<div class="equipment-text">
-<h3>先端実験</h3>
-<p>3Dバイオプリンター、組織関連実験。</p>
-</div>
-</article>
-<article class="equipment feature">
-<img alt="プレートリーダー" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#254d43,#101f1a)'" src="assets/plate-reader.jpg"/>
-<div class="equipment-text">
-<h3>発光・蛍光・吸光度測定</h3>
-<p>GloMax、Multiskan、プレートウォッシャー、iBright。</p>
-</div>
-</article>
-<article class="equipment"><img alt="3Dプリンター" loading="lazy" src="assets/3d-printer.jpg"/><div class="equipment-text"><h3>3Dプリンター</h3><p>3D造形・試作</p></div></article><article class="equipment"><img alt="3Dバイオプリンター" loading="lazy" src="assets/3d-bioprinter.jpg"/><div class="equipment-text"><h3>3Dバイオプリンター</h3><p>BIO X／細胞・組織モデル作製</p></div></article><article class="equipment"><img alt="細胞集簇装置（サイトスピン）" loading="lazy" src="assets/cytospin.jpg"/><div class="equipment-text"><h3>細胞集簇装置（サイトスピン）</h3><p>細胞標本の作製</p></div></article><article class="equipment"><img alt="核酸自動抽出装置" loading="lazy" src="assets/kingfisher.jpg"/><div class="equipment-text"><h3>核酸自動抽出装置</h3><p>KingFisher Duo Prime</p></div></article><article class="equipment"><img alt="共焦点レーザー顕微鏡" loading="lazy" src="assets/confocal.jpg"/><div class="equipment-text"><h3>共焦点レーザー顕微鏡</h3><p>KEYENCE／高解像度イメージング</p></div></article></div>
-<div class="equipment-list">
-<div>
-<strong>分子生物</strong>
-<ul>
-<li>Bioruptor</li>
-<li>ビーズ破砕機</li>
-<li>NanoDrop One</li>
-<li>PCR / qPCR</li>
-</ul>
-</div>
-<div>
-<strong>細胞・組織</strong>
-<ul>
-<li>クリオスタット</li>
-<li>サイトスピン</li>
-<li>セルカウンター</li>
-<li>蛍光・カラー倒立顕微鏡</li>
-</ul>
-</div>
-<div>
-<strong>測定・解析</strong>
-<ul>
-<li>GloMax</li>
-<li>Multiskan SkyHigh</li>
-<li>iBright CL1500</li>
-<li>OralChroma</li>
-</ul>
-</div>
-<div>
-<strong>生体・皮膚評価</strong>
-<ul>
-<li>TEER測定装置</li>
-<li>VAPO SCAN</li>
-<li>MouseOx PLUS</li>
-<li>冷却遠心機</li>
-</ul>
-</div>
-<div><strong>先端・画像解析</strong><ul><li>共焦点レーザー顕微鏡</li><li>3Dバイオプリンター</li><li>3Dプリンター</li><li>核酸自動抽出装置</li><li>サイトスピン</li></ul></div></div>
+<div class="equipment-categories"><section class="equipment-category"><h3>分子生物・遺伝子解析</h3><div class="equipment-grid"><article class="equipment"><img alt="CFX Duet リアルタイムPCRシステム" loading="lazy" src="assets/qPCR.jpg"/><div class="equipment-text"><h3>CFX Duet リアルタイムPCRシステム</h3><p>遺伝子発現解析</p></div></article><article class="equipment"><img alt="核酸自動抽出装置" loading="lazy" src="assets/kingfisher.jpg"/><div class="equipment-text"><h3>核酸自動抽出装置</h3><p>KingFisher Duo Prime</p></div></article><article class="equipment"><img alt="微量紫外可視分光光度計" loading="lazy" src="assets/nanodrop.jpg"/><div class="equipment-text"><h3>微量紫外可視分光光度計</h3><p>NanoDrop One／核酸・タンパク質濃度測定</p></div></article><article class="equipment"><img alt="化学発光撮影装置" loading="lazy" src="assets/ibright.jpg"/><div class="equipment-text"><h3>化学発光撮影装置</h3><p>iBright 1500／化学発光・蛍光イメージング</p></div></article><article class="equipment"><img alt="ビーズ破砕機" loading="lazy" src="assets/bead-homogenizer.jpg"/><div class="equipment-text"><h3>ビーズ破砕機</h3><p>ビーズによる試料の破砕・均質化</p></div></article><article class="equipment"><img alt="密閉式超音波破砕装置" loading="lazy" src="assets/bioruptor.jpg"/><div class="equipment-text"><h3>密閉式超音波破砕装置</h3><p>Bioruptor BR-I／超音波による試料破砕</p></div></article></div></section><section class="equipment-category"><h3>細胞・組織解析</h3><div class="equipment-grid"><article class="equipment"><img alt="セルソーター" loading="lazy" src="assets/facs.jpg"/><div class="equipment-text"><h3>セルソーター</h3><p>BD FACSAria III</p></div></article><article class="equipment"><img alt="共焦点レーザー顕微鏡" loading="lazy" src="assets/confocal.jpg"/><div class="equipment-text"><h3>共焦点レーザー顕微鏡</h3><p>KEYENCE／高解像度イメージング</p></div></article><article class="equipment"><img alt="蛍光倒立顕微鏡" loading="lazy" src="assets/microscope.jpg"/><div class="equipment-text"><h3>蛍光倒立顕微鏡</h3><p>細胞・組織の観察</p></div></article><article class="equipment"><img alt="細胞集簇装置（サイトスピン）" loading="lazy" src="assets/cytospin.jpg"/><div class="equipment-text"><h3>細胞集簇装置（サイトスピン）</h3><p>細胞標本の作製</p></div></article><article class="equipment"><img alt="凍結切片薄切装置" loading="lazy" src="assets/cryostat.jpg"/><div class="equipment-text"><h3>凍結切片薄切装置</h3><p>Epredia HM525 NX／凍結組織切片の作製</p></div></article><article class="equipment"><img alt="単細胞懸濁液自動調製装置" loading="lazy" src="assets/gentlemacs.jpg"/><div class="equipment-text"><h3>単細胞懸濁液自動調製装置</h3><p>gentleMACS Octo Dissociator with Heaters／組織からの細胞懸濁液調製</p></div></article></div></section><section class="equipment-category"><h3>微生物・口腔解析</h3><div class="equipment-grid"><article class="equipment"><img alt="嫌気チャンバー" loading="lazy" src="assets/anaerobic-chamber.jpg"/><div class="equipment-text"><h3>嫌気チャンバー</h3><p>嫌気条件下での微生物培養</p></div></article><article class="equipment"><img alt="歯周病菌簡易検出装置" loading="lazy" src="assets/periodontal-bacteria-detector.jpg"/><div class="equipment-text"><h3>歯周病菌簡易検出装置</h3><p>口腔関連微生物の簡易検出</p></div></article><article class="equipment"><img alt="口臭測定用簡易ガスクロマトグラフ" loading="lazy" src="assets/oralchroma.jpg"/><div class="equipment-text"><h3>口臭測定用簡易ガスクロマトグラフ</h3><p>OralChroma／揮発性硫黄化合物の測定</p></div></article></div></section><section class="equipment-category"><h3>生体・皮膚機能評価</h3><div class="equipment-grid"><article class="equipment"><img alt="TEER測定装置" loading="lazy" src="assets/teer.jpg"/><div class="equipment-text"><h3>TEER測定装置</h3><p>上皮バリア機能の評価</p></div></article><article class="equipment"><img alt="経皮水分蒸散量（TEWL）測定装置" loading="lazy" src="assets/tewl-skin-meter.jpg"/><div class="equipment-text"><h3>経皮水分蒸散量（TEWL）測定装置</h3><p>皮膚バリア機能の評価</p></div></article><article class="equipment"><img alt="齧歯類鼻部吸入曝露システム" loading="lazy" src="assets/rodent-nose-only-exposure.jpg"/><div class="equipment-text"><h3>齧歯類鼻部吸入曝露システム</h3><p>Buxco FinePointe／鼻部吸入曝露試験</p></div></article></div></section><section class="equipment-category"><h3>測定・分離分析</h3><div class="equipment-grid"><article class="equipment"><img alt="マイクロプレートリーダー" loading="lazy" src="assets/plate-reader.jpg"/><div class="equipment-text"><h3>マイクロプレートリーダー</h3><p>Multiskan SkyHigh／吸光度測定</p></div></article><article class="equipment"><img alt="高速冷却遠心機" loading="lazy" src="assets/high-speed-centrifuge.jpg"/><div class="equipment-text"><h3>高速冷却遠心機</h3><p>KOKUSAN H-2000B／試料の遠心分離</p></div></article><article class="equipment"><img alt="マルチモードプレートリーダー" loading="lazy" src="assets/glomax.jpg"/><div class="equipment-text"><h3>マルチモードプレートリーダー</h3><p>GloMax Multi+／発光・蛍光等の測定</p></div></article></div></section><section class="equipment-category"><h3>3D造形・バイオプリンティング</h3><div class="equipment-grid"><article class="equipment"><img alt="3Dプリンター" loading="lazy" src="assets/3d-printer.jpg"/><div class="equipment-text"><h3>3Dプリンター</h3><p>Bambu Lab A1／3D造形・試作</p></div></article><article class="equipment"><img alt="3Dバイオプリンター" loading="lazy" src="assets/3d-bioprinter.jpg"/><div class="equipment-text"><h3>3Dバイオプリンター</h3><p>CELLINK BIO X／細胞・組織モデル作製</p></div></article></div></section></div>
+<p class="note">その他、Bioruptor、ビーズ破砕機、NanoDrop One、PCR装置、セルカウンター、GloMax、iBright CL1500、プレートウォッシャー、MouseOx PLUSなどを備えています。</p>
 </div>
 </section>
-<section class="section" id="admissions"><div class="layout"><p class="mini-label">2027 / LABORATORY ASSIGNMENT</p><h2 class="section-title">2027年度 研究室配属案内</h2><p class="lead">受入れ人数は3名以内。研究室説明会への参加と、福山との面談・研究室見学が必須です。選考は成績証明書・志望理由書（形式自由）・面接を総合して判断します。</p><div class="detail-grid"><article class="detail-card"><h3>研究室説明会</h3><p>2026年11月16日（月）15:00〜／1号館 603・604ゼミ室<br/>2026年12月14日（月）14:00〜／1号館6階 実習室8<br/>参加できない場合はメールでご相談ください。</p></article><article class="detail-card"><h3>応募から配属まで</h3><p>説明会参加 → メールで面談・見学予約 → 面談・研究室見学 → 成績証明書・志望理由書提出 → 書類・面接による選考</p></article></div><h3 style="margin-top:46px">入室後の研究ステップ</h3><div class="flow-steps"><article><strong>STEP 01 / 3月〜GW前</strong>初期研修：実験手法、データ解析、細胞・細菌・実験動物の取り扱いを学びます。</article><article><strong>STEP 02 / GW後〜9月</strong>お試し研究：習得した技術を実際に使い、授業と研究の両立を身につけます。</article><article><strong>STEP 03 / 3年後期〜</strong>本研究：研究テーマを決定し、学外学会発表（必須）と論文発表を目指します。</article></div><p class="note">募集日時・人数等は2027年度募集要項に基づきます。応募前に最新の案内をご確認ください。</p></div></section><section class="section final-cta">
+<section class="section final-cta">
 <div class="layout">
 <h2 class="section-title">研究テーマに向き合う時間を、ここから。</h2>
 <p class="lead">研究室見学、大学院進学、共同研究に関するお問い合わせは、メールまたはフォームよりご連絡ください。</p>
